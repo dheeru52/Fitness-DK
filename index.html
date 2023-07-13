@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushik Fitness</title>
+
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* CSS Reset  */
+    body { 
+        font-family:sans-serif;
+        color: rgb(219, 147, 12);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/biceps-gb6519440f_1920.jpg');
+
+    }
+
+    .left {
+        border: 1px solid red;
+        position: absolute;
+        display: inline-block;
+        left: 4px;
+        top: 8px;
+
+    }
+
+    .left img {
+        width: 125px;
+        margin: 0px;
+        filter: invert(100%);
+ 
+    }
+
+     .mid {
+        /* border: 1px solid rgb(0, 255, 42); */
+        margin: 28px auto;
+        display: block;
+        width: 53%;
+
+    }
+
+    .left div{
+        text-align: center;
+        border-radius: 24px;
+        
+    }
+
+    .right {
+        border:1px solid rgb(12, 173, 248);
+        display: inline-block;
+        position: absolute;
+        top: 28px;
+        right: 34px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        /*iska usee underline ko hatane ke liye kiya jata haii */
+        padding: 9px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: blue;
+        background-color: rgb(210, 233, 527);
+        border-radius: 2px;
+
+    }
+
+    .btn{
+        margin: 0px 10px;
+        color: blueviolet;
+        background-color: blanchedalmond;
+        padding: 12px;
+border-radius: 24px;
+border: 1px solid yellow;
+font-size: large;
+width: 100px;
+cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: greenyellow;
+    }
+   
+   .container{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 150px 2px;
+    padding: 2px 164px;
+    border-radius: 25px;
+    color: black;
+}
+
+   .form-group input{
+text-align: center;
+display: block;
+width:336px;
+padding: 0px;
+margin:12px;
+font-size: 25px;
+border-radius: 12px;
+   }
+   /* .container h1{
+    text-align: center;
+   } */
+
+   .container button{
+    display: block;
+    width: 200px;
+    margin: 25px ;
+    text-align: center;
+   }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div class="left">
+                <img src="img/istockphoto-1334162534-1024x1024.jpg" alt="">
+                <div>Kaushik Fitness</div>
+            </div>
+
+        </div>
+
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Right box for Buttons -->
+        <div class="right">
+<button class="btn">Call us</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+           <h1>join the best gym Delhi now</h1>
+           <form action="noaction.php">  <!--ye ek backend  haii no-action  kuch vor matt smajna -->
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your name">
+ 
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Age">
+ 
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Gender">
+ 
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Locality">
+ 
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Phone number">
+ 
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Email Address">
+ 
+</div>
+<button class="btn">Submit</button>
+           </form>
+    </div>
+</body>
+
+</html>
